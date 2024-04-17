@@ -1,0 +1,73 @@
+.rodape {
+    text-align: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.rodape .navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape .endereco {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+.rodape .redes-sociais {
+    padding: 7px;
+}
+
+.rodape .redes-sociais a {
+    font-size: 30px;
+    padding: 0 7px;
+    
+}
+
+.rodape .redes-sociais .whatsapp a{
+    width: 500px;
+    border: 1px solid rgb(48, 191, 57);
+    background-color: rgb(48, 191, 57);
+    border-radius: 65px;
+    padding: 7px 15px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.rodape .redes-sociais .whatsapp i {
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .rodape .endereco {
+        font-size: 16px;
+        padding: 15px 15px;
+    }
+    
+    .rodape .redes-sociais a {
+        font-size: 25px;
+    }
+    
+    .rodape .redes-sociais .whatsapp a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .rodape .endereco {
+        font-size: 16px;
+        padding: 15px 15px;
+    }
+    
+    .rodape .redes-sociais a {
+        font-size: 25px;
+    }
+    
+    .rodape .redes-sociais .whatsapp a {
+        font-size: 20px;
+    }
+}
+

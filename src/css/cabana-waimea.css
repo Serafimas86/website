@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;800&display=swap');
+
+bady {
+    font-family: 'Public Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CABECALHO */
+
+.logo .imagem {
+    width: 120px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    /* max-width: 1170px; */
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: rgb(222, 216, 169);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.logo .titulo {
+    margin-left: 7px;
+    font-size: 22px;
+    transition: 0.3s ease-in-out;
+    font-weight: 800;
+    color: rgb(117, 43, 17);
+}
+
+.cabecalho .titulo:hover {
+    color: #08387fc4;
+    
+}
+
+.cabecalho .navegacao .menu {
+    display: flex;
+}
+
+.cabecalho .navegacao .menu .item {
+    margin: 10px;
+}
+
+.cabecalho .navegacao .menu .item a {
+    font-size: 25px;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    color: rgb(117, 43, 17);
+}
+
+.cabecalho .navegacao .menu .item a:hover {
+    background-color: #08387fc4;
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+
+/* PAINEL */
+
+.cabana-maui {
+    height: 550px;
+}
+
+.content {
+    width: 60%;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(117, 43, 17);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 1000%;
+    height: 100%;
+}
+
+.slide {
+    width: 10%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -10%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -30%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide6:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#slide7:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide8:checked ~ .s1 {
+    margin-left: -70%;
+}
+
+#slide9:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+#slide10:checked ~ .s1 {
+    margin-left: -90%;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+/* PAINEL */
+
+
+/* ESTRUTURA */
+
+.estrutura {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 800px; 
+    margin: 30px auto;
+    margin-top: 700px;
+}
+
+.estrutura .titulo-estrutura {
+    display: flex; 
+}
+
+.estrutura .titulo {
+    font-size: 19px;
+    line-height: 1.2;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.estrutura .estrutura-cabanas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px;
+    padding: 12px;
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 7px;
+    
+}
+
+.estrutura .estrutura-cabanas .estrutura-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; 
+}
+
+.estrutura-imagem {
+    width: 55px;
+}
+
+.estrutura-icones {
+    font-size: 18px;
+    padding-left: 7px;
+}
+
+/* ESTRUTURA */
+
+/* RODAPÉ */
+
+.rodape {
+    text-align: center;
+    flex-wrap: wrap;
+    /* margin-bottom: 15px; */
+    background-color: rgb(222, 216, 169);
+    height: 340px;
+}
+
+.rodape .navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape .endereco {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+
+.rodape .redes-sociais {
+    padding: 7px;
+}
+
+.rodape .redes-sociais a {
+    font-size: 30px;
+    padding: 0 7px;
+
+}
+
+.rodape .redes-sociais .whatsapp a {
+    width: 500px;
+    border: 1px solid rgb(48, 191, 57);
+    background-color: rgb(48, 191, 57);
+    border-radius: 65px;
+    padding: 7px 15px;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.rodape .redes-sociais .whatsapp i {
+    color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+    .logo .titulo {
+        font-size: 20px;
+    }
+
+    .cabecalho .navegacao .menu .item a {
+        font-size: 22px;
+    }
+
+    .content {
+        margin-top: 25px;
+        height: 500px;
+    }
+
+    .bar {
+        width: 45px;
+    }
+
+    .estrutura {
+        margin-top: 600px;
+    }
+
+    .estrutura-imagem {
+        width: 45px;
+    }
+}
+
+    
+
+@media (max-width: 768px) {
+    .logo .titulo {
+        font-size: 18px;
+    }
+
+    .cabecalho .navegacao .menu .item a {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 70%;
+    }
+
+    .bar {
+        width: 40px;
+    }
+
+    .estrutura {
+        width: 600px;
+    }
+
+    .estrutura .titulo {
+        font-size: 17px;
+    }
+
+    .estrutura-imagem {
+        width: 40px;
+    }
+    
+    .estrutura-icones {
+        font-size: 16px;
+    }
+
+    .rodape .endereco {
+        font-size: 16px;
+        padding: 15px 15px;
+    }
+    
+    .rodape .redes-sociais a {
+        font-size: 25px;
+    }
+    
+    .rodape .redes-sociais .whatsapp a {
+        font-size: 20px;
+    }
+}
+
+
+
+@media (max-width: 426px) {
+    .cabecalho {
+        flex-direction: column;
+        padding: 25px 25px;
+    }
+
+    .content {
+        width: 90%;
+        height: 400px;
+    }
+
+    .bar {
+        width: 25px;
+    }
+
+    .estrutura {
+        width: 400px;
+        margin-top: 450px;
+    }
+
+    .estrutura .titulo {
+        font-size: 17px;
+    }
+
+    .estrutura-imagem {
+        width: 40px;
+    }
+
+    .estrutura-icones {
+        font-size: 16px;
+        padding-left: 7px;
+    }
+
+    .estrutura .estrutura-cabanas {
+        width: 400px; 
+    }
+    
+    .rodape .endereco {
+        font-size: 16px;
+        padding: 15px 15px;
+    }
+    
+    .rodape .redes-sociais a {
+        font-size: 25px;
+    }
+    
+    .rodape .redes-sociais .whatsapp a {
+        font-size: 20px;
+    }
+}
+

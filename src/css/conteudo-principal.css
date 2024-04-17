@@ -1,0 +1,551 @@
+.conteudo-principal .folder {
+    position: relative;
+}
+
+.conteudo-principal .container {
+    position: relative;
+
+}
+
+.conteudo-principal .titulo {
+    position: absolute;
+    font-size: 55px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+
+.conteudo-principal .container .imagem {
+    width: 100%;
+    object-fit: cover;
+    background: cover;
+    height: 600px;
+}
+
+.conteudo-principal .quem-somos {
+    display: flex;
+    background-color: rgb(222, 216, 169);
+    margin: 10px 0;
+}
+
+.conteudo-principal .quem-somos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 6.5%;
+}
+
+.quem-somos .conteudo .informacoes {
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+.quem-somos .conteudo .informacoes .tituloh2 {
+    padding-bottom: 10px;
+}
+
+.quem-somos .conteudo .informacoes .texto {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: justify;
+    padding-right: 30px;
+}
+
+.conteudo-principal .content {
+    width: 50%;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    left: 43%;
+    border: 2px solid rgb(117, 43, 17);
+    flex-wrap: wrap;
+}
+
+.conteudo-principal .navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.conteudo-principal .bar {
+    width: 55px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    flex-wrap: wrap;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 800%;
+    height: 100%;
+}
+
+.slide {
+    width: 12.5%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -12.5%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -25%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -37.5%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -50%;
+}
+
+#slide6:checked~.s1 {
+    margin-left: -62.5%;
+}
+
+#slide7:checked~.s1 {
+    margin-left: -75%;
+}
+
+#slide8:checked~.s1 {
+    margin-left: -87.5%;
+}
+
+.conteudo-principal .bar:hover {
+    background-color: #fff;
+}
+
+.cabanas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cabanas .cabana1,
+.cabanas .cabana2,
+.cabanas .cabana3 {
+    text-align: center;
+}
+
+.nome-maui,
+.nome-oahu,
+.nome-waimea {
+    color: rgb(117, 43, 17);
+    margin-bottom: 20px;
+}
+
+.cabanas img {
+    width: 470px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(117, 43, 17);
+}
+
+.cabana1 .btn,
+.cabana2 .btn,
+.cabana3 .btn {
+    font-size: 18px;
+    background-color: #08387fc4;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 7px;
+}
+
+.regras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.regras .regras-cabana {
+    width: 900px;
+    border-top: 2px solid #08387fc4;
+    border-bottom: 2px solid #08387fc4;
+    margin-top: 50px;
+}
+
+.regras .regras-da-casa {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.regras .regras-gerais {
+    font-size: 18px;
+}
+
+.regras .regras-gerais .span {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.regras .regras-gerais .icones {
+    width: 30px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.regras .conteudo .entrada,
+.regras .conteudo .saida,
+.regras .conteudo .pre-pagamento,
+.regras .conteudo .criancas-camas,
+.regras .conteudo .restricoes,
+.regras .conteudo .fumantes,
+.regras .conteudo .animais-estimacao,
+.regras .conteudo .descricao {
+    display: flex;
+    align-items: center;
+}
+
+.regras .bandeiras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regras .cartao {
+    width: 60px;
+    margin: 0 15px;
+}
+
+.comentarios {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+    background-color: rgb(222, 216, 169);
+}
+
+
+.comentarios .comentario-hospedes {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.comentarios .comentario-hospedes .titulo-p {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.comentarios .comentario-hospedes .avaliacao {
+    justify-content: center;
+}
+
+.comentarios .comentario-hospedes .img-avaliacao {
+    width: 390px;
+    height: 235px;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.proximidades-acomodacoes {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../imagens/imagens-de-fundo/balneario-gaivota-centro.png);
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    justify-content: center;
+    align-items: center;
+}
+
+.proximidades-acomodacoes .titulo-acomodacoes h2 {
+    font-size: 30px;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.proximidades-acomodacoes .proximidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proximidades-acomodacoes .proximidades .mercados,
+.proximidades-acomodacoes .proximidades .restaurantes,
+.proximidades-acomodacoes .proximidades .farmacias {
+    width: 290px;
+    background-color: #ffffff;
+    padding: 8px;
+    line-height: 1.2;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.proximidades-acomodacoes .proximidades .estabelecimentos h3 {
+    margin-bottom: 5px;
+}
+
+.reservas {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(222, 216, 169);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+.reservas .reservas-corpo {
+    width: 700px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    line-height: 1.5;
+}
+
+.reservas .reservas-corpo .blink {
+    font-size: 22px;
+    font-weight: 600;
+    /* animation: blink 4s infinite; */
+}
+
+/* @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.7;
+    }
+
+    100% {
+        opacity: 0;
+        color: blue;
+    }
+} */
+
+.reservas .reservas-corpo .texto {
+    font-size: 18px;
+}
+
+.mapa {
+    margin: 0 auto;
+    border: 2px solid #08387fc4;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+}
+
+@media (max-width: 1024px) {
+    .conteudo-principal .titulo {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .cabanas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cabanas img {
+        margin-bottom: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 18px;
+    }
+
+    .conteudo-principal .container .imagem {
+        height: 500px;
+    }
+
+    .quem-somos .conteudo .informacoes .texto {
+        padding-right: 10px;
+    }
+
+    .conteudo-principal .content {
+        width: 60%;
+        position: absolute;
+        left: 210px;
+        height: 400px;
+        margin-top: 830px;
+    }
+
+    .conteudo-principal .quem-somos {
+        display: block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 930px;
+    }
+
+    .conteudo-principal .quem-somos .conteudo {
+        padding-right: 0;
+        padding: 10%;
+    }
+
+    .quem-somos .conteudo .informacoes {
+        width: 100%;
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .conteudo-principal .titulo {
+        text-align: center;
+    }
+
+    .conteudo-principal .titulo {
+        font-size: 30px;
+    }
+
+    .conteudo-principal .container .imagem {
+        height: 350px;
+    }
+
+    .regras .regras-cabana {
+        width: 650px;
+    }
+
+    .regras .regras-gerais {
+        font-size: 14px;
+    }
+
+    .regras .regras-gerais .span {
+        font-size: 16px;
+    }
+
+    .regras .regras-gerais .icones {
+        width: 25px;
+    }
+
+    .comentarios .comentario-hospedes .titulo-p {
+        font-size: 20px;
+    }
+
+    .comentarios .comentario-hospedes .img-avaliacao {
+        width: 300px;
+    }
+
+    .quem-somos .conteudo .informacoes .tituloh2 {
+        font-size: 18px;
+    }
+
+    .quem-somos .conteudo .informacoes .texto {
+        font-size: 16px;
+        padding-right: 10px;
+    }
+
+
+    .conteudo-principal .content {
+        width: 70%;
+        left: 115px;
+    }
+
+    .cabanas img {
+        width: 520px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 426px) {
+    .conteudo-principal .quem-somos {
+        height: 900px;
+    }
+
+    .conteudo-principal .container .imagem {
+        height: 300px;
+    }
+
+    .quem-somos .conteudo .informacoes {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .conteudo-principal .content {
+        width: 90%;
+        height: 370px;
+        left: 20px;
+    }
+
+    .conteudo-principal .bar {
+        width: 35px;
+    }
+
+    .cabanas {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .regras .regras-gerais {
+        font-size: 14px;
+    }
+
+    .regras .regras-gerais .span {
+        font-size: 16px;
+    }
+
+    .regras .regras-gerais .icones {
+        width: 20px;
+    }
+
+    .regras .regras-cabana {
+        width: 420px;
+    }
+
+    .regras .cartao {
+        width: 45px;
+        margin-bottom: 8px;
+        flex-wrap: wrap;
+    }
+
+    .comentarios .comentario-hospedes .img-avaliacao {
+        width: 320px;
+        height: 235px;
+        padding: 10px;
+        border-radius: 18px;
+    }
+
+    .reservas {
+        height: 250px;
+    }
+    
+    .reservas .reservas-corpo {
+        line-height: 1.3;
+    }
+    
+    .reservas .reservas-corpo .blink {
+        font-size: 22px;
+    }
+    
+    .reservas .reservas-corpo .texto {
+        font-size: 16px;
+    }
+}
