@@ -570,7 +570,8 @@ input {
     }
 
     .cabanas img {
-        width: 380px;
+        flex-wrap: wrap;
+        width: 340px;
         height: 400px;
     }
 
@@ -605,7 +606,7 @@ input {
     }
 }
 
-@media (max-width: 376px) {
+@media (min-width: 376px) and (max-width: 393px) {
     .conteudo-principal .quem-somos {
         height: 920px;
     }
@@ -617,7 +618,6 @@ input {
     .quem-somos .conteudo .informacoes {
         width: 100%;
         text-align: center;
-
     }
 
     .conteudo-principal .content {
@@ -627,12 +627,16 @@ input {
         margin-top: 880px;
     }
 
+    .conteudo-principal .navigation {
+        width: 350px;
+    }
+
     .conteudo-principal .bar {
         width: 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cabanas {
-        grid-template-columns: repeat(1, 1fr);
         gap: 60px;
     }
 
@@ -648,8 +652,6 @@ input {
         color: #fff;
         background-color: rgb(117, 43, 17);
     }
-
-
 
     .cabanas img {
         width: 340px;
