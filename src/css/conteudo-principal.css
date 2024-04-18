@@ -373,6 +373,7 @@ input {
 
     .cabanas {
         grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
 
     .cabanas img {
@@ -469,9 +470,26 @@ input {
         left: 115px;
     }
 
+    .cabanas {
+        gap: 40px;
+    }
+
     .cabanas img {
         width: 520px;
         height: 450px;
+    }
+
+    .nome-maui,
+    .nome-oahu,
+    .nome-waimea {
+        margin: 0 auto;
+        font-size: 26px;
+        border: 2px solid;
+        border-radius: 10px;
+        width: 280px;
+        margin-bottom: 10px;
+        color: #fff;
+        background-color: rgb(117, 43, 17);
     }
 }
 
@@ -531,6 +549,43 @@ input {
         height: 235px;
         padding: 10px;
         border-radius: 18px;
+    }
+
+    .cabanas {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+
+    .nome-maui,
+    .nome-oahu,
+    .nome-waimea {
+        margin: 0 auto;
+        font-size: 26px;
+        border: 2px solid;
+        border-radius: 10px;
+        width: 280px;
+        margin-bottom: 10px;
+        color: #fff;
+        background-color: rgb(117, 43, 17);
+    }
+
+    .cabanas img {
+        width: 380px;
+        height: 400px;
+    }
+
+    .regras .regras-gerais {
+        font-size: 14px;
+        flex-wrap: wrap;
+        max-width: 350px;
+    }
+
+    .regras-gerais p {
+        padding: 5px 15px;
+    }
+
+    .proximidades-acomodacoes {
+        height: 485px;
     }
 
     .reservas {
