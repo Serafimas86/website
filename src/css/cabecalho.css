@@ -82,3 +82,11 @@
     }
 }
 
+@media (max-width: 376px) {
+    .cabecalho .navegacao .menu .item {
+        width: auto; 
+        margin: 5px;
+        font-size: 18px;
+    }
+}
+

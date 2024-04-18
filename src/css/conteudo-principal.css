@@ -536,16 +536,87 @@ input {
     .reservas {
         height: 250px;
     }
-    
+
     .reservas .reservas-corpo {
         line-height: 1.3;
     }
-    
+
     .reservas .reservas-corpo .blink {
         font-size: 22px;
     }
-    
+
     .reservas .reservas-corpo .texto {
         font-size: 16px;
     }
+}
+
+@media (max-width: 376px) {
+    .conteudo-principal .quem-somos {
+        height: 920px;
+    }
+
+    .conteudo-principal .container .imagem {
+        height: 300px;
+    }
+
+    .quem-somos .conteudo .informacoes {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .conteudo-principal .content {
+        width: 90%;
+        height: 370px;
+        left: 20px;
+        margin-top: 880px;
+    }
+
+    .conteudo-principal .bar {
+        width: 30px;
+    }
+
+    .cabanas {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+
+    .nome-maui,
+    .nome-oahu,
+    .nome-waimea {
+        margin: 0 auto;
+        font-size: 26px;
+        border: 2px solid;
+        border-radius: 10px;
+        width: 280px;
+        margin-bottom: 10px;
+        color: #fff;
+        background-color: rgb(117, 43, 17);
+    }
+
+
+
+    .cabanas img {
+        width: 340px;
+        height: 400px;
+    }
+
+    .regras .regras-gerais {
+        font-size: 14px;
+        flex-wrap: wrap;
+        max-width: 350px;
+    }
+
+    .regras-gerais p {
+        padding: 5px 15px;
+    }
+
+    .proximidades-acomodacoes {
+        height: 485px;
+    }
+
+    .proximidades-acomodacoes .titulo-acomodacoes h2 {
+        font-size: 25px;
+    }
+
 }
