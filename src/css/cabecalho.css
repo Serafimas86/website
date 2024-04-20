@@ -55,38 +55,24 @@
     border-radius: 7px;
 }
 
-@media (max-width: 1024px) {
+@media screen and (max-width: 767px) {
     .logo .imagem {
-        width: 120px;
+        width: 30%;
     }
 
-    .logo .titulo {        
-        font-size: 20px;
+    .cabecalho {
+        padding: 10px 15px;
     }
-}
 
-@media (max-width: 768px) {
-    .logo .titulo {        
+    .logo .titulo {
         font-size: 18px;
     }
 
     .cabecalho .navegacao .menu .item a {
-        font-size: 18px;
-    }
-
-}
-
-@media (max-width: 426px) {
-    .cabecalho {
-        padding: 25px 25px;
-    }
-}
-
-@media (max-width: 376px) {
-    .cabecalho .navegacao .menu .item {
-        width: auto; 
+        font-size: 14px;
+        padding: 8px;
         margin: 5px;
-        font-size: 18px;
     }
 }
+
 

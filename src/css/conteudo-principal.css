@@ -16,6 +16,7 @@
     color: #ffffff;
     z-index: 2;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .conteudo-principal .container .imagem {
@@ -23,6 +24,7 @@
     object-fit: cover;
     background: cover;
     height: 600px;
+    max-width: 100%;
 }
 
 .conteudo-principal .quem-somos {
@@ -143,11 +145,12 @@ input {
 .cabanas {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px;
     width: 100%;
     margin-top: 50px;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 10px;
 }
 
 .cabanas .cabana1,
@@ -159,12 +162,18 @@ input {
 .nome-maui,
 .nome-oahu,
 .nome-waimea {
-    color: rgb(117, 43, 17);
-    margin-bottom: 20px;
+    margin: 0 auto;
+    font-size: 26px;
+    border: 2px solid;
+    border-radius: 10px;
+    width: 280px;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: rgb(117, 43, 17);
 }
 
 .cabanas img {
-    width: 470px;
+    width: 100%;
     height: 500px;
     object-fit: cover;
     margin-bottom: 20px;
@@ -189,6 +198,8 @@ input {
     position: relative;
     margin-top: 20px;
     text-align: justify;
+    padding: 0 50px;
+    flex-wrap: wrap;
 }
 
 .regras .regras-cabana {
@@ -365,78 +376,158 @@ input {
     height: 300px;
 }
 
-@media (max-width: 1024px) {
+
+
+/* Estilos Responsivos */
+@media screen and (min-width:1024px) and (max-width:1439px) {
     .conteudo-principal .titulo {
-        font-size: 45px;
+        font-size: 42px;
         text-align: center;
     }
 
     .cabanas {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .nome-maui,
+    .nome-oahu,
+    .nome-waimea {
+        width: 280px;
     }
 
     .cabanas img {
-        margin-bottom: 20px;
-        display: block;
-        margin: auto;
-        margin-bottom: 18px;
+        object-fit: cover;
+        height: 400px;
+    }
+
+    .conteudo-principal .container {
+        max-width: 100%;
     }
 
     .conteudo-principal .container .imagem {
-        height: 500px;
-    }
-
-    .quem-somos .conteudo .informacoes .texto {
-        padding-right: 10px;
-    }
-
-    .conteudo-principal .content {
-        width: 60%;
-        position: absolute;
-        left: 210px;
         height: 400px;
-        margin-top: 830px;
     }
 
     .conteudo-principal .quem-somos {
-        display: block;
         flex-direction: column;
-        flex-wrap: wrap;
-        height: 930px;
     }
 
-    .conteudo-principal .quem-somos .conteudo {
-        padding-right: 0;
-        padding: 10%;
+    .conteudo-principal .bar {
+        width: 40px;
     }
 
-    .quem-somos .conteudo .informacoes {
-        width: 100%;
-        text-align: center;
-
+    .comentarios .comentario-hospedes .img-avaliacao {
+        width: 320px;
+        height: 235px;
+        padding: 10px;
     }
 }
 
-@media (max-width: 768px) {
-    .conteudo-principal .titulo {
-        text-align: center;
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .cabanas {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .conteudo-principal .titulo {
+        font-size: 35px;
+    }
+
+    .conteudo-principal .container {
+        max-width: 100%;
+    }
+
+    .conteudo-principal .container .imagem {
+        height: 300px;
+    }
+
+    .conteudo-principal .quem-somos {
+        flex-direction: column;
+    }
+
+    .comentarios .comentario-hospedes .img-avaliacao {
+        grid-template-columns: repeat(2, 1fr);
+        width: 280px;
+        height: 235px;
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .conteudo-principal .titulo {
         font-size: 30px;
+    }
+
+    .conteudo-principal .container {
+        max-width: 100%;
     }
 
     .conteudo-principal .container .imagem {
         height: 350px;
     }
 
-    .regras .regras-cabana {
-        width: 650px;
+    .cabanas {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+
+    .conteudo-principal .quem-somos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .conteudo-principal .quem-somos .conteudo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quem-somos .conteudo .informacoes {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .quem-somos .conteudo .informacoes .tituloh2 {
+        font-size: 20px;
+    }
+
+    .quem-somos .conteudo .informacoes .texto {
+        font-size: 16px;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .conteudo-principal .content {
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px; 
+        text-align: center;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        object-fit: cover;
+        max-height: 400px;
+        align-items: center;
+    }
+
+    .conteudo-principal .slide s1,
+    .conteudo-principal .slide {
+        max-width: 100%;
+    }
+
+    .conteudo-principal .bar {
+        width: 25px;
+        max-width: 30px;
     }
 
     .regras .regras-gerais {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .regras .regras-gerais .span {
@@ -447,233 +538,29 @@ input {
         width: 25px;
     }
 
-    .comentarios .comentario-hospedes .titulo-p {
-        font-size: 20px;
+    .regras .cartao {
+        width: 45px;
+        margin: 0 15px;
     }
 
     .comentarios .comentario-hospedes .img-avaliacao {
         width: 300px;
     }
 
-    .quem-somos .conteudo .informacoes .tituloh2 {
-        font-size: 18px;
-    }
-
-    .quem-somos .conteudo .informacoes .texto {
-        font-size: 16px;
-        padding-right: 10px;
-    }
-
-
-    .conteudo-principal .content {
-        width: 70%;
-        left: 115px;
-    }
-
-    .cabanas {
-        gap: 40px;
-    }
-
-    .cabanas img {
-        width: 520px;
-        height: 450px;
-    }
-
-    .nome-maui,
-    .nome-oahu,
-    .nome-waimea {
-        margin: 0 auto;
-        font-size: 26px;
-        border: 2px solid;
-        border-radius: 10px;
-        width: 280px;
-        margin-bottom: 10px;
-        color: #fff;
-        background-color: rgb(117, 43, 17);
-    }
-}
-
-@media (max-width: 426px) {
-    .conteudo-principal .quem-somos {
-        height: 900px;
-    }
-
-    .conteudo-principal .container .imagem {
-        height: 300px;
-    }
-
-    .quem-somos .conteudo .informacoes {
-        width: 100%;
+    .proximidades-acomodacoes .titulo-acomodacoes h2 {
+        font-size: 30px;
+        color: #ffffff;
+        padding: 15px;
+        flex-wrap: wrap;
         text-align: center;
-
-    }
-
-    .conteudo-principal .content {
-        width: 90%;
-        height: 370px;
-        left: 20px;
-    }
-
-    .conteudo-principal .bar {
-        width: 35px;
-    }
-
-    .cabanas {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .regras .regras-gerais {
-        font-size: 14px;
-    }
-
-    .regras .regras-gerais .span {
-        font-size: 16px;
-    }
-
-    .regras .regras-gerais .icones {
-        width: 20px;
-    }
-
-    .regras .regras-cabana {
-        width: 420px;
-    }
-
-    .regras .cartao {
-        width: 45px;
-        margin-bottom: 8px;
-        flex-wrap: wrap;
-    }
-
-    .comentarios .comentario-hospedes .img-avaliacao {
-        width: 320px;
-        height: 235px;
-        padding: 10px;
-        border-radius: 18px;
-    }
-
-    .cabanas {
-        grid-template-columns: repeat(1, 1fr);
-        gap: 60px;
-    }
-
-    .nome-maui,
-    .nome-oahu,
-    .nome-waimea {
-        margin: 0 auto;
-        font-size: 26px;
-        border: 2px solid;
-        border-radius: 10px;
-        width: 280px;
-        margin-bottom: 10px;
-        color: #fff;
-        background-color: rgb(117, 43, 17);
-    }
-
-    .cabanas img {
-        flex-wrap: wrap;
-        width: 340px;
-        height: 400px;
-    }
-
-    .regras .regras-gerais {
-        font-size: 14px;
-        flex-wrap: wrap;
-        max-width: 350px;
-    }
-
-    .regras-gerais p {
-        padding: 5px 15px;
+        justify-content: center;
     }
 
     .proximidades-acomodacoes {
-        height: 485px;
-    }
-
-    .reservas {
-        height: 250px;
-    }
-
-    .reservas .reservas-corpo {
-        line-height: 1.3;
-    }
-
-    .reservas .reservas-corpo .blink {
-        font-size: 22px;
+        height: 470px;
     }
 
     .reservas .reservas-corpo .texto {
         font-size: 16px;
     }
-}
-
-@media (min-width: 376px) and (max-width: 393px) {
-    .conteudo-principal .quem-somos {
-        height: 920px;
-    }
-
-    .conteudo-principal .container .imagem {
-        height: 300px;
-    }
-
-    .quem-somos .conteudo .informacoes {
-        width: 100%;
-        text-align: center;
-    }
-
-    .conteudo-principal .content {
-        width: 90%;
-        height: 370px;
-        left: 20px;
-        margin-top: 880px;
-    }
-
-    .conteudo-principal .navigation {
-        width: 350px;
-    }
-
-    .conteudo-principal .bar {
-        width: 30px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .cabanas {
-        gap: 60px;
-    }
-
-    .nome-maui,
-    .nome-oahu,
-    .nome-waimea {
-        margin: 0 auto;
-        font-size: 26px;
-        border: 2px solid;
-        border-radius: 10px;
-        width: 280px;
-        margin-bottom: 10px;
-        color: #fff;
-        background-color: rgb(117, 43, 17);
-    }
-
-    .cabanas img {
-        width: 340px;
-        height: 400px;
-    }
-
-    .regras .regras-gerais {
-        font-size: 14px;
-        flex-wrap: wrap;
-        max-width: 350px;
-    }
-
-    .regras-gerais p {
-        padding: 5px 15px;
-    }
-
-    .proximidades-acomodacoes {
-        height: 485px;
-    }
-
-    .proximidades-acomodacoes .titulo-acomodacoes h2 {
-        font-size: 25px;
-    }
-
 }
