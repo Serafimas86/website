@@ -69,10 +69,14 @@
         font-size: 18px;
     }
 
+    .cabecalho .navegacao .menu .item {
+        margin: 5px;
+    }
+
     .cabecalho .navegacao .menu .item a {
         font-size: 14px;
         padding: 8px;
-        margin: 5px;
+        margin: 0;
     }
 }
 
