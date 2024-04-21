@@ -291,11 +291,12 @@ input {
     }
 
     .content {
-        width: 70%;
+        width: 60%;
         height: 500px;
         top: 30%;
         object-fit: cover;
         position: relative;
+        object-fit: cover;
     }
 
     .bar {
