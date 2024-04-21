@@ -287,14 +287,15 @@ input {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .cabana-maui {
-        height: 570px;
+        height: 1080px;
     }
-
+    
     .content {
         width: 70%;
         height: 500px;
-        top: 60%;
+        top: 30%;
         object-fit: cover;
+        position: relative;
     }
 
     .bar {
@@ -307,10 +308,9 @@ input {
     .estrutura {
         display: flex;
         flex-direction: column;
-        height: 500px;
         width: 80%;
         margin: 30px auto;
-        margin-top: 600px;
+        margin-top: 100px;
     }
 
 
@@ -366,14 +366,15 @@ input {
     }
 
     .cabana-maui {
-        height: 550px;
+        height: 1020px;
     }
 
     .content {
         width: 90%;
         height: 390px;
-        top: 50%;
+        top: 25%;
         object-fit: cover;
+        position: relative;
     }
 
     .bar {
@@ -389,7 +390,7 @@ input {
         height: 480px;
         width: 90%;
         margin: 30px auto;
-        margin-top: 480px;
+        margin-top: 90px;
     }
 
     .estrutura .titulo {
@@ -401,7 +402,7 @@ input {
     .estrutura .estrutura-cabanas {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 20px;
+        margin-top: 60px;
     }
 
     .estrutura-imagem {
