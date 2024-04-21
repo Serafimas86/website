@@ -86,7 +86,7 @@ html {
 
 /* PAINEL */
 
-.cabana-maui {
+.cabana-oahu {
     height: 550px;
 }
 
@@ -286,7 +286,7 @@ input {
 }
 
 @media screen and (min-width:768px) and (max-width:1024px) {
-    .cabana-maui {
+    .cabana-oahu {
         height: 1080px;
     }
     
@@ -365,7 +365,7 @@ input {
         margin: 0;
     }
 
-    .cabana-maui {
+    .cabana-oahu {
         height: 1020px;
     }
 
