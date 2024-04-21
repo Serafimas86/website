@@ -285,6 +285,38 @@ input {
     color: #ffffff;
 }
 
+@media screen and (min-width:1024px) and (max-width:1439px) {
+    .cabana-waimea {
+        height: 1080px;
+    }
+
+    .content {
+        width: 70%;
+        height: 500px;
+        top: 30%;
+        object-fit: cover;
+        position: relative;
+    }
+
+    .bar {
+        width: 55px;
+    }
+
+    .estrutura {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 30px auto;
+        margin-top: 100px;
+    }
+
+    .estrutura .titulo {
+        font-size: 18px;
+        line-height: 1.2;
+        text-align: center;
+    }
+}
+
 @media screen and (min-width:768px) and (max-width:1024px) {
     .cabana-waimea {
         height: 1080px;
@@ -299,7 +331,7 @@ input {
     }
 
     .bar {
-        width: 30px;
+        width: 40px;
         height: 17px;
         border: 2px solid #fff;
         margin: 6px;
