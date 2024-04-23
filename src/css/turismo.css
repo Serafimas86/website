@@ -282,12 +282,13 @@ html {
     }
     
     .conteudo-gaiva-info {
-        width: 320px;
+        width: 100%;
         font-size: 16px;
     }
     
     .video-gaiva {
-        width: 320px;
+        width: 100%;
+        max-width: 500px;
         height: 320px;
     }
     
@@ -299,6 +300,7 @@ html {
     .atrativos-turisticos {
         display: grid;
         gap: 30px;
+        margin-top: 20px;
     }
 
     .rodape {
