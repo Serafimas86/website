@@ -19,6 +19,23 @@
     text-align: center;
 }
 
+.container a {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container .btn {
+    font-size: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: 1px solid rgb(117, 43, 17);
+}
+
 .conteudo-principal .container .imagem {
     width: 100%;
     object-fit: cover;
@@ -189,7 +206,7 @@ input {
 .cabana2 .btn,
 .cabana3 .btn {
     font-size: 18px;
-    background-color: #08387fc4;
+    background-color: #8d4925;
     color: #fff;
     padding: 10px 30px;
     border-radius: 7px;
@@ -208,8 +225,8 @@ input {
 
 .regras .regras-cabana {
     width: 900px;
-    border-top: 2px solid #08387fc4;
-    border-bottom: 2px solid #08387fc4;
+    border-top: 2px solid rgb(117, 43, 17);
+    border-bottom: 2px solid rgb(117, 43, 17);
     margin-top: 50px;
 }
 
@@ -372,7 +389,7 @@ input {
 
 .mapa {
     margin: 0 auto;
-    border: 2px solid #08387fc4;
+    border: 2px solid rgb(117, 43, 17);
 }
 
 .mapa iframe {
