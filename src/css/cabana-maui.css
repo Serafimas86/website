@@ -55,10 +55,12 @@ html {
     transition: 0.3s ease-in-out;
     font-weight: 800;
     color: rgb(117, 43, 17);
+    text-decoration: none;
 }
 
 .cabecalho .titulo:hover {
-    color: #08387fc4;
+    color: rgb(117, 43, 17);
+    text-decoration: underline;
 
 }
 
@@ -78,7 +80,7 @@ html {
 }
 
 .cabecalho .navegacao .menu .item a:hover {
-    background-color: #08387fc4;
+    background-color: rgb(117, 43, 17);
     color: #ffffff;
     border-radius: 7px;
 }

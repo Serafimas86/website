@@ -254,9 +254,8 @@ input {
     margin-left: 10px;
 }
 
-.regras .conteudo .entrada,
-.regras .conteudo .saida,
-.regras .conteudo .pre-pagamento,
+.regras .conteudo .reserva,
+.regras .conteudo .convivencia,
 .regras .conteudo .criancas-camas,
 .regras .conteudo .restricoes,
 .regras .conteudo .fumantes,
@@ -264,6 +263,26 @@ input {
 .regras .conteudo .descricao {
     display: flex;
     align-items: center;
+}
+
+.reserva .btn,
+.convivencia .btn {
+    display: block;
+    font-size: 18px;
+    background-color: #8d4925;
+    color: #fff;
+    border-radius: 7px;
+    width: 120px;
+    height: 35px;
+    padding: 5px 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-top: 8px;
+}
+
+.reserva .btn:hover,
+.convivencia .btn:hover {
+    transform: scale(1.1);
 }
 
 .regras .bandeiras {
