@@ -183,16 +183,38 @@ html {
     font-size: 16px;
 }
 
-a:hover {
-    color: orangered;
-}
-
 .img {
     width: 500px;
     height: 375px;
     border: 2px solid rgb(117, 43, 17);
     border-radius: 20px;
     object-fit: fill;
+}
+
+.rede-social {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.instagram {
+    background: linear-gradient(45deg, #E4405F, #405DE6);
+    padding: 7px;
+    border-radius: 7px;
+    margin-right: 5px;
+}
+
+.instagram i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.rede-social span {
+    background: linear-gradient(45deg, #E4405F, #405DE6);
+    padding: 7px;
+    border-radius: 7px;
+    color: #fff;
 }
 
 
@@ -330,6 +352,12 @@ a:hover {
         height: 325px;
     }
 
+    .rede-social {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
     .rodape {
         margin-top: 30px;
         height: auto;

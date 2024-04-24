@@ -28,15 +28,24 @@
 
 .container .btn {
     font-size: 20px;
-    background: transparent;
-    backdrop-filter: blur(10px);
+    background: linear-gradient(45deg, #ff9a00, #ff0000, #ffcc00);
     color: #fff;
     padding: 10px 30px;
     border-radius: 7px;
-    border: 1px solid rgb(117, 43, 17);
-    flex-wrap: wrap;
+    border: none;
     text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.5), 0 0 80px rgba(255, 255, 255, 0.5), 0 0 100px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+    margin-top: 12px;
 }
+
+.container .btn:hover {
+    /* transform: scale(1.1); */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 60px rgba(255, 255, 255, 0.5), 0 0 80px rgba(255, 255, 255, 0.5), 0 0 120px rgba(255, 255, 255, 0.5);
+}
+
 
 .conteudo-principal .container .imagem {
     width: 100%;
@@ -473,6 +482,10 @@ input {
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
+    .cabecalho {
+        flex-direction: column;
+    }
+
     .cabanas {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -507,8 +520,18 @@ input {
 }
 
 @media screen and (max-width: 767px) {
+    .cabecalho {
+        padding: 10px 15px;
+    }
+    
     .conteudo-principal .titulo {
         font-size: 30px;
+    }
+
+    .container .btn {
+        font-size: 18px;
+        padding: 10px 15px;
+        margin-top: 15px;
     }
 
     .conteudo-principal .container {
