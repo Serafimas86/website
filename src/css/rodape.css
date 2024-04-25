@@ -58,33 +58,26 @@
     margin-left: 10px;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .rodape .endereco {
         font-size: 16px;
         padding: 15px 15px;
     }
-    
+
     .rodape .redes-sociais a {
-        font-size: 25px;
+        width: 35px;
+        height: 35px;
     }
     
     .rodape .redes-sociais .whatsapp a {
-        font-size: 20px;
+        width: 250px;
     }
+    
+    .rodape .redes-sociais .whatsapp i {
+        color: #ffffff;
+        margin-left: 5px;
+    }    
 }
 
-@media (max-width: 425px) {
-    .rodape .endereco {
-        font-size: 16px;
-        padding: 15px 15px;
-    }
-    
-    .rodape .redes-sociais a {
-        font-size: 25px;
-    }
-    
-    .rodape .redes-sociais .whatsapp a {
-        font-size: 20px;
-    }
-}
+
 
