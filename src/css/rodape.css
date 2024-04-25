@@ -18,27 +18,44 @@
 }
 
 .rodape .redes-sociais {
-    padding: 7px;
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    gap: 15px;
 }
 
 .rodape .redes-sociais a {
-    font-size: 30px;
-    padding: 0 7px;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    transition: transform 0.3s ease;
 }
 
-.rodape .redes-sociais .whatsapp a{
-    width: 500px;
+.rodape .redes-sociais a:hover {
+    transform: scale(1.2); 
+}
+
+.rodape .redes-sociais .whatsapp a {
+    width: 300px;
     border: 1px solid rgb(48, 191, 57);
     background-color: rgb(48, 191, 57);
     border-radius: 65px;
     padding: 7px 15px;
     color: #ffffff;
     font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.rodape .redes-sociais .whatsapp a:hover {
+    transform: scale(1.1)
 }
 
 .rodape .redes-sociais .whatsapp i {
     color: #ffffff;
+    margin-left: 10px;
 }
 
 @media (max-width: 768px) {
