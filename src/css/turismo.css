@@ -351,12 +351,6 @@ html {
     .img {
         height: 325px;
     }
-
-    .rede-social {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
     
     .rodape {
         margin-top: 30px;

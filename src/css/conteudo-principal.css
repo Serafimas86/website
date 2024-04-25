@@ -506,6 +506,11 @@ input {
         flex-direction: column;
     }
 
+    .conteudo-principal .bar {
+        width: 40px;
+        max-width: 40px;
+    }
+
     .quem-somos .conteudo .informacoes .texto {
         padding-right: 0;
     }
@@ -529,9 +534,9 @@ input {
     }
 
     .container .btn {
-        font-size: 18px;
-        padding: 10px 15px;
-        margin-top: 15px;
+        font-size: 16px;
+        padding: 10px 10px;
+        margin-top: 20px;
     }
 
     .conteudo-principal .container {
