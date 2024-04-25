@@ -530,18 +530,12 @@ input {
         font-size: 30px;
     }
 
-    .container .btn {
-        font-size: 16px;
-        padding: 10px 10px;
-        margin-top: 20px;
-    }
-
     .conteudo-principal .container {
         max-width: 100%;
     }
 
     .conteudo-principal .container .imagem {
-        height: 350px;
+        height: 320px;
     }
 
     .cabanas {

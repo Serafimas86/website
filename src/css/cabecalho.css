@@ -90,6 +90,7 @@
     .cabecalho {
         padding: 10px 15px;
         justify-content: center;
+        text-align: center;
     }
 
     .logo .titulo {
