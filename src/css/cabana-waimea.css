@@ -423,10 +423,11 @@ input {
 
     .content {
         width: 90%;
-        height: 390px;
+        height: 370px;
         top: 25%;
         object-fit: cover;
         position: relative;
+
     }
 
     .bar {
@@ -466,7 +467,7 @@ input {
     }
 
     .rodape {
-        margin-top: 60px;
+        margin-top: 70px;
         height: auto;
     }
 
