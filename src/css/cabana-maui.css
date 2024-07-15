@@ -454,17 +454,22 @@ input {
     }
 
     .rodape .endereco {
-        font-size: 18px;
-        padding: 0 5px;
+        font-size: 16px;
+        padding: 15px 15px;
     }
 
+    .rodape .redes-sociais a {
+        width: 35px;
+        height: 35px;
+    }
+    
     .rodape .redes-sociais .whatsapp a {
-        font-size: 16px;
-        width: 220px;
+        width: 265px;
+        font-size: 18px;
     }
-
+    
     .rodape .redes-sociais .whatsapp i {
-        font-size: 16px;
-        margin-left: 5px;
-    }
+        color: #ffffff;
+        margin-left: 3px;
+    }    
 }
