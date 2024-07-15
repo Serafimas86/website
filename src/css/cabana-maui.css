@@ -88,19 +88,27 @@ html {
 
 /* PAINEL */
 
+/* CABANA MAUI */
+
 .cabana-maui {
-    height: 650px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 0;
 }
 
 .content {
-    width: 60%;
+    width: 70%;
+    max-width: 1200px;
     height: 600px;
     border-radius: 20px;
     overflow: hidden;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    margin-bottom: 30px; /* Espaço abaixo do slide */
     border: 2px solid rgb(117, 43, 17);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
 }
@@ -109,7 +117,7 @@ html {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     display: flex;
 }
 
@@ -120,8 +128,12 @@ html {
     margin: 6px;
     border-radius: 5px;
     cursor: pointer;
-    transition: .4s;
+    transition: 0.4s;
     background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bar:hover {
+    background-color: #fff;
 }
 
 input {
@@ -136,87 +148,85 @@ input {
 
 .slide {
     width: 10%;
-    transition: .6s;
+    transition: 0.6s;
 }
 
 .slide img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
-#slide1:checked~.s1 {
+#slide1:checked ~ .s1 {
     margin-left: 0;
 }
 
-#slide2:checked~.s1 {
+#slide2:checked ~ .s1 {
     margin-left: -10%;
 }
 
-#slide3:checked~.s1 {
+#slide3:checked ~ .s1 {
     margin-left: -20%;
 }
 
-#slide4:checked~.s1 {
+#slide4:checked ~ .s1 {
     margin-left: -30%;
 }
 
-#slide5:checked~.s1 {
+#slide5:checked ~ .s1 {
     margin-left: -40%;
 }
 
-#slide6:checked~.s1 {
+#slide6:checked ~ .s1 {
     margin-left: -50%;
 }
 
-#slide7:checked~.s1 {
+#slide7:checked ~ .s1 {
     margin-left: -60%;
 }
 
-#slide8:checked~.s1 {
+#slide8:checked ~ .s1 {
     margin-left: -70%;
 }
 
-#slide9:checked~.s1 {
+#slide9:checked ~ .s1 {
     margin-left: -80%;
 }
 
-#slide10:checked~.s1 {
+#slide10:checked ~ .s1 {
     margin-left: -90%;
 }
-
-.bar:hover {
-    background-color: #fff;
-}
-
-/* PAINEL */
-
 
 /* ESTRUTURA */
 
 .estrutura {
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 800px;
-    margin: 30px auto;
-    margin-top: 700px;
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .estrutura .titulo-estrutura {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .estrutura .titulo {
     font-size: 19px;
     line-height: 1.3;
     text-align: justify;
-    margin-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .detalhes {
     font-size: 19px;
     line-height: 1.3;
     margin-top: 20px;
+    text-align: center;
 }
 
 .estrutura .estrutura-cabanas {
@@ -227,7 +237,7 @@ input {
     margin: auto;
     border: 2px solid #000;
     border-radius: 7px;
-
+    width: 100%;
 }
 
 .estrutura .estrutura-cabanas .estrutura-div {
@@ -236,6 +246,7 @@ input {
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 }
 
 .estrutura-imagem {
@@ -246,8 +257,6 @@ input {
     font-size: 18px;
     padding-left: 7px;
 }
-
-/* ESTRUTURA */
 
 /* RODAPÉ */
 
@@ -289,7 +298,7 @@ input {
 }
 
 .rodape .redes-sociais a:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
 
 .rodape .redes-sociais .whatsapp a {
@@ -312,17 +321,16 @@ input {
     margin-left: 10px;
 }
 
+/* RESPONSIVO */
+
 @media screen and (min-width:1024px) and (max-width:1439px) {
     .cabana-maui {
-        height: 1080px;
+        height: auto;
     }
 
     .content {
         width: 60%;
-        height: 500px;
-        object-fit: cover;
-        position: relative;
-        object-fit: cover;
+        height: 650px; /* Ajuste de altura */
     }
 
     .bar {
@@ -330,11 +338,7 @@ input {
     }
 
     .estrutura {
-        display: flex;
-        flex-direction: column;
         width: 80%;
-        margin: 30px auto;
-        margin-top: 100px;
     }
 
     .estrutura .titulo {
@@ -344,32 +348,22 @@ input {
 
 @media screen and (min-width:768px) and (max-width:1024px) {
     .cabana-maui {
-        height: 1300px;
+        height: auto;
     }
     
     .content {
         width: 70%;
-        height: 500px;
-        top: 23%;
-        object-fit: cover;
-        position: relative;
+        height: 600px; /* Ajuste de altura */
     }
 
     .bar {
         width: 40px;
         height: 17px;
-        border: 2px solid #fff;
-        margin: 6px;
     }
 
     .estrutura {
-        display: flex;
-        flex-direction: column;
         width: 80%;
-        margin: 30px auto;
-        margin-top: 100px;
     }
-
 
     .estrutura .titulo {
         font-size: 18px;
@@ -380,10 +374,7 @@ input {
     }
 
     .estrutura .estrutura-cabanas {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
-        margin-top: 10px;
     }
 
     .estrutura-imagem {
@@ -397,12 +388,11 @@ input {
     .rodape {
         height: auto;
     }
-
 }
 
 @media screen and (max-width: 767px) {
     .logo .imagem {
-        width: 30%;
+        width: 40%;
     }
 
     .cabecalho {
@@ -425,31 +415,22 @@ input {
     }
 
     .cabana-maui {
-        height: 1430px;
+        height: auto;
+        padding: 10px 0;
     }
 
     .content {
         width: 90%;
-        height: 390px;
-        top: 20%;
-        object-fit: cover;
-        position: relative;
+        height: 370px;
     }
 
     .bar {
         width: 19px;
         height: 17px;
-        border: 2px solid #fff;
-        margin: 6px;
     }
 
     .estrutura {
-        display: flex;
-        flex-direction: column;
-        height: 480px;
         width: 90%;
-        margin: 30px auto;
-        margin-top: 90px;
     }
 
     .estrutura .titulo {
@@ -461,9 +442,7 @@ input {
     }
 
     .estrutura .estrutura-cabanas {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin-top: 10px;
     }
 
     .estrutura-imagem {
@@ -474,22 +453,18 @@ input {
         font-size: 16px;
     }
 
-    .rodape {
-        margin-top: 85px;
-        height: auto;
-    }
-
     .rodape .endereco {
         font-size: 18px;
         padding: 0 5px;
     }
 
-    .rodape .redes-sociais a {
-        font-size: 25px;
-
+    .rodape .redes-sociais .whatsapp a {
+        font-size: 16px;
+        width: 220px;
     }
 
-    .rodape .redes-sociais .whatsapp a {
-        font-size: 20px;
+    .rodape .redes-sociais .whatsapp i {
+        font-size: 16px;
+        margin-left: 5px;
     }
 }
