@@ -26,50 +26,59 @@
     transform: translate(-50%, -50%);
 }
 
-.conteudo-principal .container .imagem{
+.conteudo-principal .container .imagem {
     width: 100%;
     height: 600px;
     object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .conteudo-principal .quem-somos {
     display: flex;
-    margin: 10px 0;
+    position: relative;
+    margin-top: 10px;
 }
 
 .conteudo-principal .quem-somos .conteudo {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 6.5%;
+    padding: 5%;
     background-color: rgb(222, 216, 169);
+    gap: 10px;
 }
 
 .quem-somos .conteudo .informacoes {
-    width: 40%;
     flex-wrap: wrap;
 }
 
 .quem-somos .conteudo .informacoes .tituloh2 {
+    font-size: 36px;
+    color: rgb(117, 43, 17);
     padding-bottom: 10px;
 }
 
 .quem-somos .conteudo .informacoes .texto {
     font-size: 18px;
-    line-height: 1.5;
+    line-height: 1.6;
     font-weight: 400;
     text-align: justify;
-    padding-right: 30px;
+    color: #333;
+    flex: 1;
 }
 
 .conteudo-principal .content {
-    width: 50%;
+    max-width: 600px;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    left: 43%;
     border: 2px solid rgb(117, 43, 17);
-    flex-wrap: wrap;
+    object-fit: cover;
+    right: 7%;
+    flex: 1;
+
 }
 
 .conteudo-principal .navigation {
@@ -89,6 +98,7 @@
     cursor: pointer;
     transition: .4s;
     flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 input {
@@ -165,7 +175,7 @@ input {
     border: 1px solid rgb(222, 216, 169);
     border-radius: 20px;
     background-color: rgb(222, 216, 169);
-    height: 620px;
+    height: 635px;
 }
 
 .nome-maui,
@@ -176,6 +186,7 @@ input {
     border: 2px solid rgb(117, 43, 17);
     border-radius: 10px;
     width: 280px;
+    margin-top: 15px;
     margin-bottom: 15px;
     color: #fff;
     background-color: rgb(117, 43, 17);
@@ -185,6 +196,8 @@ input {
     width: 100%;
     height: 500px;
     object-fit: cover;
+    background-position: center;
+    background-size: cover;
     margin-bottom: 20px;
     border-radius: 20px;
     border: 2px solid rgb(117, 43, 17);
@@ -223,6 +236,11 @@ input {
     padding: 20px 0;
 }
 
+.regras-da-casa h2 {
+    color: rgb(117, 43, 17);
+    font-size: 26px;
+}
+
 .regras .regras-gerais {
     font-size: 18px;
 }
@@ -233,11 +251,14 @@ input {
     text-decoration: underline;
 }
 
+.regras-gerais p {
+    color: #333;
+}
+
 .regras .regras-gerais .icones {
     width: 30px;
     margin-right: 10px;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 .regras .conteudo .reserva,
@@ -249,6 +270,7 @@ input {
 .regras .conteudo .descricao {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .reserva .btn,
@@ -296,7 +318,8 @@ input {
 }
 
 .comentarios .comentario-hospedes .titulo-p {
-    font-size: 22px;
+    color: rgb(117, 43, 17);
+    font-size: 26px;
     font-weight: 600;
     padding: 20px 0;
 }
@@ -318,13 +341,14 @@ input {
     background-image: url(../imagens/imagens-de-fundo/balneario-gaivota-centro.png);
     background-size: cover;
     background-position: center;
-    height: 450px;
+    object-fit: cover;
+    height: auto;
     justify-content: center;
     align-items: center;
 }
 
 .proximidades-acomodacoes .titulo-acomodacoes h2 {
-    font-size: 30px;
+    font-size: 26px;
     color: #ffffff;
     padding: 15px;
 }
@@ -345,6 +369,13 @@ input {
     margin: 10px 0;
     text-align: center;
     border-radius: 7px;
+    
+}
+
+.proximidades-acomodacoes .proximidades .mercados p,
+.proximidades-acomodacoes .proximidades .restaurantes p,
+.proximidades-acomodacoes .proximidades .farmacias p {
+    color: #333;
 }
 
 .proximidades-acomodacoes .proximidades .estabelecimentos h3 {
@@ -367,31 +398,17 @@ input {
     padding: 10px;
     border-radius: 7px;
     line-height: 1.5;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 .reservas .reservas-corpo .blink {
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 600;
-    /* animation: blink 4s infinite; */
 }
-
-/* @keyframes blink {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0.7;
-    }
-
-    100% {
-        opacity: 0;
-        color: blue;
-    }
-} */
 
 .reservas .reservas-corpo .texto {
     font-size: 18px;
+    color: #333;
 }
 
 .mapa {
@@ -407,7 +424,34 @@ input {
 
 
 /* Estilos Responsivos */
-@media screen and (min-width:1024px) and (max-width:1439px) {
+@media screen and (min-width:1024px) and (max-width:1280px) {
+    .conteudo-principal .quem-somos .conteudo {
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative; 
+        height: 100%;
+    }
+
+    .quem-somos .conteudo .informacoes {
+        height: 800px;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-principal .content {
+        width: 600px;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    .conteudo-principal .bar {
+        width: 60px;
+        height: 17px;
+    }
+
     .conteudo-principal .titulo {
         font-size: 42px;
         text-align: center;
@@ -473,19 +517,32 @@ input {
 
     .conteudo-principal .container {
         max-width: 100%;
+        display: flex;
     }
 
     .conteudo-principal .container .imagem {
         height: 300px;
     }
 
-    .conteudo-principal .quem-somos {
+    .conteudo-principal .quem-somos .conteudo {
         flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .quem-somos .conteudo .informacoes {
+        height: 840px;
+    }
+
+    .conteudo-principal .content {
+        width: 700px;
+        height: 450px;
+        top: 45%;
+        right: 10.8%;
     }
 
     .conteudo-principal .bar {
-        width: 40px;
-        max-width: 40px;
+        width: 60px;
+        height: 17px;
     }
 
     .quem-somos .conteudo .informacoes .texto {
@@ -505,7 +562,7 @@ input {
     .cabecalho {
         padding: 10px 15px;
     }
-    
+
     .conteudo-principal .titulo {
         font-size: 30px;
     }
@@ -554,6 +611,7 @@ input {
         display: flex;
         flex-direction: column;
         align-items: center;
+
     }
 
     .quem-somos .conteudo .informacoes .tituloh2 {
@@ -571,14 +629,12 @@ input {
     .conteudo-principal .content {
         width: 100%;
         max-width: 400px;
-        margin-top: 20px;
         text-align: center;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
-        object-fit: cover;
         max-height: 400px;
-        align-items: center;
+        top: 10px;
     }
 
     .conteudo-principal .slide s1,
