@@ -350,7 +350,7 @@ input {
     }
     
     .content {
-        width: 75%;
+        width: 70%;
         height: 600px; /* Ajuste de altura */
     }
 
@@ -440,17 +440,19 @@ input {
     }
 
     .estrutura .estrutura-cabanas {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
+        gap: 8px; /* Ajusta o espaçamento entre os itens */
+        padding: 10px; /* Ajusta o padding */
     }
 
     .estrutura-imagem {
-        width: 40px;
+        width: 45px;
     }
 
     .estrutura-icones {
         font-size: 16px;
+        padding-left: 5px; /* Ajusta o padding à esquerda dos ícones */
     }
-
     .rodape .endereco {
         font-size: 16px;
         padding: 15px 15px;
