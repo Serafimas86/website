@@ -142,12 +142,12 @@ input {
 
 .slides {
     display: flex;
-    width: 1000%;
+    width: 1100%; 
     height: 100%;
 }
 
 .slide {
-    width: 10%;
+    width: 9.09%; 
     transition: 0.6s;
 }
 
@@ -162,40 +162,46 @@ input {
 }
 
 #slide2:checked ~ .s1 {
-    margin-left: -10%;
+    margin-left: -9.09%;
 }
 
 #slide3:checked ~ .s1 {
-    margin-left: -20%;
+    margin-left: -18.18%;
 }
 
 #slide4:checked ~ .s1 {
-    margin-left: -30%;
+    margin-left: -27.27%;
 }
 
 #slide5:checked ~ .s1 {
-    margin-left: -40%;
+    margin-left: -36.36%;
 }
 
 #slide6:checked ~ .s1 {
-    margin-left: -50%;
+    margin-left: -45.45%;
 }
 
 #slide7:checked ~ .s1 {
-    margin-left: -60%;
+    margin-left: -54.54%;
 }
 
 #slide8:checked ~ .s1 {
-    margin-left: -70%;
+    margin-left: -63.63%;
 }
 
 #slide9:checked ~ .s1 {
-    margin-left: -80%;
+    margin-left: -72.72%;
 }
 
 #slide10:checked ~ .s1 {
-    margin-left: -90%;
+    margin-left: -81.81%;
 }
+
+#slide11:checked ~ .s1 {
+    margin-left: -90.90%;
+}
+
+
 
 /* ESTRUTURA */
 
@@ -352,8 +358,8 @@ input {
     }
     
     .content {
-        width: 70%;
-        height: 600px; /* Ajuste de altura */
+        width: 75%;
+        height: 600px;
     }
 
     .bar {
@@ -420,7 +426,7 @@ input {
     }
 
     .content {
-        width: 90%;
+        width: 94%;
         height: 370px;
     }
 
