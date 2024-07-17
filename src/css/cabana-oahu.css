@@ -440,9 +440,9 @@ input {
     }
 
     .estrutura .estrutura-cabanas {
-        grid-template-columns: repeat(2, 1fr); /* Ajusta para 2 colunas */
-        gap: 8px; /* Ajusta o espaçamento entre os itens */
-        padding: 10px; /* Ajusta o padding */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 8px; 
+        padding: 10px;
     }
 
     .estrutura-imagem {
